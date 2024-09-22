@@ -62,7 +62,7 @@ function newMessage(message, sent_by_id, thread_id) {
         let userImage = $('#logged-in-user-profile-image').val(); // Assuming you store logged-in user image in a hidden input
 	    message_element = `
 			<div class="d-flex mb-4 replied">
-				<div class="msg_cotainer_send">
+				<div class="msg_container_send">
 					${message}
 					<span class="msg_time_send">${new Date().toLocaleTimeString()}}</span>
 				</div>
@@ -78,7 +78,7 @@ function newMessage(message, sent_by_id, thread_id) {
               <div class="img_cont_msg">
                  <img src="${profile_image}" class="rounded-circle user_img_msg">
               </div>
-              <div class="msg_cotainer">
+              <div class="msg_container">
                  ${message}
               <span class="msg_time">${new Date().toLocaleTimeString()}</span>
               </div>
