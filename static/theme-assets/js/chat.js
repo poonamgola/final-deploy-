@@ -6,9 +6,9 @@ const USER_ID = $('#logged-in-user').val()
 let loc = window.location
 let wsStart = 'ws://'
 
-if(loc.protocol === 'https'){
-	wsStart = 'wss://'
-}
+// if(loc.protocol === 'https'){
+// 	wsStart = 'wss://'
+// }
 let endpoint = wsStart + loc.host + '/user/chat/'
 
 var socket = new WebSocket(endpoint)
