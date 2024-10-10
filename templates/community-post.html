@@ -192,7 +192,8 @@
                         </div>
                         <p>{{ post.user.skills_expertise }}</p>
                         <a href="{% url 'profile' post.user.username %}" class="btn btn-dark rounded-2 mb-0 btn-profile" data-username="{{ post.user.username }}">Profile</a>
-                        <a href="{% url 'start_conversation' user_id=user.id %}?second_person={{ post.user.username }}" class="btn btn-dark rounded-2 mb-0">Chat with {{ post.user.username }}</a>   
+                        {% comment %} <a href="{% url 'start_conversation' user_id=user.id %}?second_person={{ post.user.username }}" class="btn btn-dark rounded-2 mb-0">Chat with {{ post.user.username }}</a> {% endcomment %}
+                        <a href="#" class="btn btn-dark rounded-2 mb-0">Chat with {{ post.user.username }}</a>   
                     </div>
                 </div>
             </div>
